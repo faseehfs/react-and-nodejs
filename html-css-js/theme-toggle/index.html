@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Toggle</title>
+    <style>
+      :root {
+        --bg-light: rgb(255, 255, 255);
+        --bg-dark: rgb(24, 24, 24);
+        --text-light: rgb(0, 0, 0);
+        --text-dark: rgb(218, 218, 218);
+      }
+
+      body[data-theme="light"] {
+        --bg: var(--bg-light);
+        --text: var(--text-light);
+      }
+
+      body[data-theme="dark"] {
+        --bg: var(--bg-dark);
+        --text: var(--text-dark);
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        background: var(--bg);
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body data-theme="light">
+    <h1>Theme Toggle</h1>
+    <p>Click the button below to change theme.</p>
+    <button id="theme-toggle">Click Me</button>
+
+    <script>
+      const button = document.getElementById("theme-toggle");
+
+      button.addEventListener("click", () => {
+        const current = document.body.getAttribute("data-theme");
+        const next = current === "light" ? "dark" : "light";
+        document.body.setAttribute("data-theme", next);
+      });
+    </script>
+  </body>
+</html>

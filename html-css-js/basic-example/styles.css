@@ -22,6 +22,9 @@ body {
   color, font-family, font-size, font-style, font-weight, and line-height text-align
   are inherited by all children from the parent element.
   */
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
 }
 
 button {
