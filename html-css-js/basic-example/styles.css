@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Makes the width and height include padding and border. */
+}
+/*
+* selects all elements.
+*::before and *::after includes pseudo-elements.
+*/
+
+:root {
+  /* Here, store the CSS variables. */
+  --primary: #1361aa;
+  --primary-light: #3578b6;
+  --primary-dark: #0e4f8b;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /*
+  Propreties like
+  color, font-family, font-size, font-style, font-weight, and line-height text-align
+  are inherited by all children from the parent element.
+  */
+}
+
+button {
+  color: #fff;
+  background-color: var(--primary); /* Accessing CSS variables */
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem; /* top right bottom left */
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+button:active {
+  background-color: var(--primary);
+}
+
+button:disabled {
+  background-color: var(--primary-light);
+}

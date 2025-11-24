@@ -1,0 +1,63 @@
+:root {
+  /* --- Primary Brand Colors --- */
+  --primary: #007bff; /* Main brand color, used for buttons, links, highlights */
+  --primary-light: #339cff; /* Lighter variant, for hover states or backgrounds */
+  --primary-dark: #0056b3; /* Darker variant, for active states or borders */
+  --primary-muted: #cce5ff; /* Soft version, for subtle text or backgrounds */
+
+  /* --- Secondary / Supporting Colors --- */
+  --secondary: #6c757d; /* Secondary color, less prominent UI elements */
+  --secondary-light: #a6a9ad; /* Lighter variant for backgrounds or disabled states */
+  --secondary-dark: #494f54; /* Darker variant for borders or text */
+  --secondary-muted: #e2e3e5; /* Soft muted background or subtle text */
+
+  /* --- Status Colors --- */
+  --success: #28a745; /* Indicates success, e.g., success messages, check marks */
+  --success-light: #5cd65c; /* Lighter variant for backgrounds */
+  --success-dark: #1e7e34; /* Darker variant for text or borders */
+  --success-muted: #d4edda; /* Soft background for alerts or subtle highlights */
+
+  --danger: #dc3545; /* Indicates errors or danger */
+  --danger-light: #e66775; /* Lighter variant for backgrounds */
+  --danger-dark: #a71d2a; /* Darker variant for text or borders */
+  --danger-muted: #f8d7da; /* Soft background for alerts or subtle highlights */
+
+  --warning: #ffc107; /* Warning messages or highlights */
+  --warning-light: #ffe08a; /* Lighter variant for backgrounds */
+  --warning-dark: #cc9a06; /* Darker variant for text or borders */
+  --warning-muted: #fff3cd; /* Soft background for alerts or subtle highlights */
+
+  --info: #17a2b8; /* Informational messages or highlights */
+  --info-light: #4fc3d7; /* Lighter variant for backgrounds */
+  --info-dark: #117a8b; /* Darker variant for text or borders */
+  --info-muted: #d1ecf1; /* Soft background for alerts or subtle highlights */
+
+  /* --- Neutral / Grayscale --- */
+  --light: #f8f9fa; /* Light background, surfaces */
+  --light-muted: #f1f3f5; /* Softer background for cards or sections */
+  --dark: #343a40; /* Dark background or text */
+  --dark-muted: #495057; /* Secondary dark for subtle text */
+
+  --text-primary: #212529; /* Main text color */
+  --text-secondary: #6c757d; /* Secondary/subtle text */
+  --text-muted: #868e96; /* Very muted, low emphasis text */
+  --text-inverse: #ffffff; /* Text on dark backgrounds */
+
+  --border: #dee2e6; /* Default border color */
+  --border-muted: #e9ecef; /* Lighter borders for subtle divisions */
+
+  /* --- Accent / Special Purpose Colors --- */
+  --accent: #ff5722; /* Accent color for highlights, badges, or icons */
+  --accent-light: #ff8a50; /* Lighter accent for backgrounds or hover states */
+  --accent-dark: #e64a19; /* Darker accent for borders or text */
+  --accent-muted: #ffece6; /* Soft accent for subtle UI elements */
+
+  /* --- Shadows and Overlays --- */
+  --shadow: rgba(0, 0, 0, 0.1); /* Default subtle shadow */
+  --overlay: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent overlay for modals or backgrounds */
+}
