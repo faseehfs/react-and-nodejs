@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #1943ff;
+  --primary-dark: #1a3edb;
+  --text-primary: #000000;
+  --text-inverse: #ffffff;
+}
+
 body {
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-size: 1rem;
+  color: var(--text-inverse);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--primary-dark);
 }
