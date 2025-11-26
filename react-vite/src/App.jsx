@@ -1,6 +1,12 @@
 function MyButton() {
+  function handleClick() {
+    alert("You clicked MyButton.");
+  }
+
   return (
-    <button>I'm a Button</button>
+    <button onClick={handleClick}>
+      I'm a Button
+    </button>
   );
 }
 
