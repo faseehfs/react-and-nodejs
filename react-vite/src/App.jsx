@@ -30,6 +30,31 @@ function CountButton() {
 }
 
 
+function SharedCountButton({count, handleClick}) {
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} Times
+    </button>
+  );
+}
+
+
+function SharedCountButtons() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div className="button-group">
+      <SharedCountButton count={count} handleClick={handleClick} />
+      <SharedCountButton count={count} handleClick={handleClick} />
+    </div>
+  )
+}
+
+
 export default function App() {
   return (
     <>
@@ -40,6 +65,8 @@ export default function App() {
         <CountButton />
         <CountButton />
       </div>
+      <h1>Counters that update together</h1>
+      <SharedCountButtons />
     </>
   )
 }
