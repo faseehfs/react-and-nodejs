@@ -2,10 +2,10 @@ import { useState } from "react";
 import "./App.css";
 
 
-function MyButton() {
+function SimpleButton() {
   return (
     <button>
-      I'm not Functional
+      I am a Simple Button
     </button>
   );
 }
@@ -59,7 +59,7 @@ export default function App() {
   return (
     <>
       <h1>Hello World!</h1>
-        <MyButton />
+        <SimpleButton />
       <h1>Counters that update separately</h1>
       <div className="button-group">
         <CountButton />
