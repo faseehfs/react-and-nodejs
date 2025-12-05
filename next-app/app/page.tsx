@@ -5,9 +5,15 @@ import CountBtn from "@/components/CountBtn";
 export default function Home() {
   return (
     <main>
-      <h1>Welcome!</h1>
-      <p>Below is a Button which is stored in the top level 'components' folder. It exists as a file named 'CountBtn.jsx'.</p>
-      <p>'CountBtn.jsx' starts with "use client";, which makes it a client component, so that we can use 'useState'.</p>
+      <h1>Home</h1>
+      <p>This is the homepage. It showcases some features of Next.js.</p>
+      <h2>Client Components</h2>
+      <p>
+        The button below is a client component. Unlike server components, it can
+        handle browser APIs, local state, user interactions, and dynamic
+        updates, while server components are limited to static rendering and
+        server-side data fetching for better SEO.
+      </p>
       <CountBtn />
     </main>
   );
