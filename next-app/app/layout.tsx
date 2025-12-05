@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+// You use {} when importing a named export and omit {} for a default export
+// because {} tells JavaScript exactly which named item to pull from a module.
+
 import "./globals.css";
+// This runs the CSS module to apply its styles globally,
+// so there’s no value to import or {} needed.
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,12 +34,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="navbar">
-        <Link href="/">
-          Home
-        </Link>
-        <Link href="/about">
-          About
-        </Link>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
         </div>
         {children}
       </body>
