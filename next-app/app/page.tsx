@@ -1,6 +1,7 @@
 import CountBtn from "@/components/CountBtn";
 // Here, CountBtn is simply the local variable name you choose to assign to its default export.
 // You could rename it like this: import Whatever from "@/components/CountBtn";
+import RandomNumberBtn from "@/components/RandomNumberBtn";
 
 export default function Home() {
   return (
@@ -15,6 +16,12 @@ export default function Home() {
         server-side data fetching for better SEO.
       </p>
       <CountBtn />
+      <h2>API</h2>
+      <p>
+        The button below fetches a random number from the route
+        'api/random-number'.
+      </p>
+      <RandomNumberBtn />
     </main>
   );
 }
