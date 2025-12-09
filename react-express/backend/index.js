@@ -2,8 +2,14 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+const userRouter = require("./routes/user");
+
+app.use("/user", userRouter);
+
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.json({
+    message: "Hello User!",
+  });
 });
 
 app.listen(port, () => {
