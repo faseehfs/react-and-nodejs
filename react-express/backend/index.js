@@ -8,7 +8,7 @@ app.use("/user", userRouter);
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Hello User!",
+    message: "Hello world!",
   });
 });
 
