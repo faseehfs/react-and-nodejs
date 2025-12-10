@@ -11,7 +11,7 @@ router.use((req, res, next) => {
     return res.status(401).json({ error: "Not authenticated." });
   }
 
-  next(); // This is important (why?).
+  next(); // Important (why?).
 });
 
 // Middleware 2 (ran after the first):
@@ -46,10 +46,10 @@ router.get("/login", (req, res) => {
   });
 });
 
-module.exports = router;
-
 router.get("/signup", (req, res) => {
   res.json({
     message: "Signup is under development.",
   });
 });
+
+module.exports = router; // Important (why?).
